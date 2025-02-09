@@ -147,7 +147,10 @@ alias tmux="tmux -u"
 alias vim=nvim
 alias iij="./.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh &"
 alias tree="tree -L 1"
+alias androidStudio="~/Downloads/android-studio/bin/studio &"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+# eval "$(/bin/brew shellenv)"
+export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
