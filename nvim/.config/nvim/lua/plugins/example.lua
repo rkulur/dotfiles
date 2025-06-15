@@ -194,6 +194,15 @@ return {
       }
     end,
   },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip", -- Completion source for LuaSnip
+    },
+    config = function()
+      require("luasnip.loaders.from_vscode").lazy_load()
+    end,
+  },
 
   -- use mini.starter instead of alpha
   { import = "lazyvim.plugins.extras.ui.mini-starter" },
@@ -216,6 +225,9 @@ return {
 
   {
     "lewis6991/gitsigns.nvim",
+  },
+  {
+    "mlaursen/vim-react-snippets",
   },
   {
     "vhyrro/luarocks.nvim",
