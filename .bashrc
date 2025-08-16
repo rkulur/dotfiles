@@ -149,6 +149,8 @@ alias iij="./.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition
 alias tree="tree -L 1"
 alias androidStudio="~/Downloads/android-studio/bin/studio &"
 alias lout="cinnamon-session-quit --logout --no-prompt"
+alias j="z"
+alias jj='z $(zoxide query -l | fzf)'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -157,3 +159,11 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=/home/rkulur/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export PATH=$PATH:$HOME/.local/opt/go/bin
+export PATH=$PATH:$HOME/.local/opt/go/bin
+export PATH=$PATH:$HOME/.local/opt/go/bin
+export PATH=$PATH:$HOME/go/bin
+eval "$(zoxide init bash)"
