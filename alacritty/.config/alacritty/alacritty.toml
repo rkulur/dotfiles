@@ -1,0 +1,54 @@
+general.ipc_socket = true
+# ~/.config/alacritty/alacritty.toml
+
+##################
+# General Settings
+##################
+general.live_config_reload = true
+
+
+general.working_directory = "None"
+
+##################
+# Window Settings
+##################
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = false
+decorations = "Full"
+opacity = 0.9
+blur = false   # If using compositor that supports blur
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true
+class = { instance = "Alacritty", general = "Alacritty" }
+
+##################
+# Font Settings
+##################
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+bold.family = "JetBrainsMono Nerd Font"
+italic.family = "JetBrainsMono Nerd Font"
+bold_italic.family = "JetBrainsMono Nerd Font"
+size = 12.0
+
+##################
+# Scrolling
+##################
+[scrolling]
+history = 10000
+multiplier = 3
+
+##################
+# Environment
+##################
+[env]
+# Example: add customized environment variables here
+
+##################
+# Colors (optional via import or inline)
+##################
+# To use a theme file, e.g.:
+# import = ["~/.config/alacritty/themes/mytheme.toml"]
+
